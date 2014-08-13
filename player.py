@@ -9,7 +9,7 @@ class Player(object):
 		wallet: amount of money player has
 	"""
 
-	def __init__(self, name="player", deck=Deck(), wallet=0):
+	def __init__(self, name="player", wallet=0):
 		self.name = name
 		self.hand = []
 		self.wallet = wallet
