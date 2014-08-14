@@ -35,10 +35,10 @@ class Deck(object):
         random.shuffle(self.cards)
 
     def add_card(self, card):
-        """Adds a new card to the top of the deck"""
+        """Adds a new card to the bottom of the deck"""
         if self.aces_high and card.rank == 1:
             new_card.value = ACE_HIGH
-        self.cards.append(card)
+        self.cards.insert(0, card)
 
     def remove_card(self, card):
         """Removes a card from the deck"""
