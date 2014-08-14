@@ -20,7 +20,7 @@ class Deck(object):
         for suit in range(4):
             for rank in range(1,14):
                 new_card = Card(suit, rank)
-                if aces_high and card.rank == "A":
+                if aces_high and new_card.rank == "A":
                     new_card.value = ACE_HIGH
                 self.cards.append(new_card)
         assert len(self.cards) == DECK_LENGTH, "Incorrect deck length after initialization"
@@ -36,7 +36,7 @@ class Deck(object):
 
     def add_card(self, card):
         """Adds a new card to the top of the deck"""
-        if self.aces_high and rank == 1:
+        if self.aces_high and card.rank == 1:
             new_card.value = ACE_HIGH
         self.cards.append(card)
 
