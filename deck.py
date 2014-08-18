@@ -1,5 +1,3 @@
-# fixed sort
-
 from card import Card
 import random
 
@@ -39,7 +37,7 @@ class Deck(object):
 
     def sort(self):
         """Sorts cards in the deck in ascending order"""
-        self.cards.sort(key=lambda card: card.rank)
+        self.cards.sort(key=lambda card: card.value)
 
     def pop_card(self):
         """Removes and returns card from top of deck"""
