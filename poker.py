@@ -20,7 +20,7 @@ class Poker(object):
         self.player = Player(player_name, WALLET_START)
         self.opponent = Player(OPPONENT_NAME, WALLET_START)
         self.pot = 0
-        self.deck = Deck(True)
+        self.deck = Deck()
         self.deck.shuffle()
 
     def show_game(self):
